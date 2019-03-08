@@ -1,0 +1,20 @@
+{
+  "name": "finder",
+  "version": "1.0.0",
+  "description": "Friend Finder app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tsaraya29/finder.git"
+  },
+  "author": "T Griffin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tsaraya29/finder/issues"
+  },
+  "homepage": "https://github.com/tsaraya29/finder#readme"
+}
