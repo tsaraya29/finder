@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/tsaraya29/finder/issues"
   },
-  "homepage": "https://github.com/tsaraya29/finder#readme"
+  "homepage": "https://github.com/tsaraya29/finder#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "node": "^11.11.0",
+    "nodemon": "^1.18.10"
+  }
 }
