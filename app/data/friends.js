@@ -1,8 +1,3 @@
-
-
-
-
-
 var friends = [
     {
         "name":"Ahmed",
@@ -19,7 +14,6 @@ var friends = [
             4,
             1
           ]
-      },
-
-      
+      },      
 ]
+module.exports = friends;

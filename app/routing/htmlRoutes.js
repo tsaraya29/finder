@@ -1,19 +1,25 @@
+// REQUIRE PATH
+const PATH = require('path');
 
-// ROUTES
-// Below is a series of express routes.
-// These routes give our server a "map" of how to respond when users visit or request data from various URLs.
-// ================================================================================
+// The html routes are separated from the api routes as these routes map the links in the app
+module.exports = function(APP) {
 
-
-// When this route is 'hit' we respond with the survey.html file
+//Route for the survey.html file
 APP.get("/survey", function(req, res){
-    res.send('survey');	
+	res.sendFile(PATH.join(__dirname, "../public/survey.html"));
 });
 
 //Default catch all that leads to home.html
-APP.get("/", function(req, res){   
-    res.send('home');	
+APP.get("*", function(req, res){   
+    res.sendFile(PATH.join(__dirname,"../public/home.html"));
 });
+};
+
+
+
+
+
+   
 
 
 
