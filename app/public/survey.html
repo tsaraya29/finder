@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Questions</title>
+	<!-- Latest compiled and minified CSS & JS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- Font Awesome Glyphicons -->
+    
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Friend Finder Survey</h1>
+        <h2>Tell us a little about you.</h2>
+        <div class="form">
+            <form>
+                <div class="form-group">
+                  <label for="name"><h3>Name:</h3></label>
+                  <input type="name" class="form-control" id="name" placeholder="Name">
+                </div>
+
+                <div class="form-group">
+                  <label for="photo"><h3>Photo Link:</h3></label>
+                  <input type="url" class="form-control" id="photo" placeholder="Link">
+                  <small id="emailHelp" class="form-text text-muted">Enter the link (URL) for your photo.</small>
+                </div>
+                <h3>Questions:</h3>
+                <hr>
+                <!-- Question Set -->
+               
+                <!-- ***Question 1*** -->
+                <h4>How often do you like to talk with your friends?</h4>
+                <div class="form-check">                   
+                        <input class="form-check-input" type="radio" name="chatfrequency" id="chatfrequency1" value=1 checked>
+                        <label class="form-check-label" for="chatfrequency1">
+                         More than once per day
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="chatfrequency" id="chatfrequency2" value=2>
+                        <label class="form-check-label" for="chatfrequency2">
+                          Once a day
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="chatfrequency" id="chatfrequency3" value=3 >
+                        <label class="form-check-label" for="chatfrequency3">
+                          Every other day
+                        </label>
+                      </div>
+                      <div class="form-check">
+                            <input class="form-check-input" type="radio" name="chatfrequency" id="chatfrequency4" value=4 >                            <label class="form-check-label" for="chatfrequency4">
+                              Once a week
+                            </label>
+                          </div>
+                          <div class="form-check">
+                                <input class="form-check-input" type="radio" name="chatfrequency" id="chatfrequency5" value=5>
+                                <label class="form-check-label" for="chatfrequency5">
+                                 Once a month
+                                </label>
+                              </div>
+                              <br>
+                              <!-- ***Question 2*** -->
+                <h4>Are you more of an indoor or outdoor person?</h4>
+                <div class="outdoor">                   
+                        <input class="outdoor-input" type="radio" name="outdoorsy" id="outdoorsy1" value="1" checked>
+                        <label class="outdoor-label" for="outdoorsy1">
+                         Definitely outdoor
+                        </label>
+                      </div>
+                      <div class="outdoor">
+                        <input class="outdoor-input" type="radio" name="outdoorsy" id="outdoorsy2" value="2">
+                        <label class="outdoor-label" for="2">
+                          I enjoy outdoor activities at times
+                        </label>
+                      </div>
+                      <div class="outdoor">
+                        <input class="outdoor-input" type="radio" name="outdoorsy" id="outdoorsy3" value="3" >
+                        <label class="outdoor-label" for="outdoorsy3">
+                          Either way, I'm okay
+                        </label>
+                      </div>
+                      <div class="outdoor">
+                            <input class="outdoor-input" type="radio" name="outdoorsy" id="outdoorsy4" value="4" >
+                            <label class="outdoor-label" for="outdoorsy4">
+                              I go outside infrequently
+                            </label>
+                          </div>
+                          <div class="outdoor">
+                                <input class="outdoor-input" type="radio" name="outdoorsy" id="outdoorsy5" value="5">
+                                <label class="outdoor-label" for="outdoorsy5">
+                                 Virtual homebody
+                                </label>
+                              </div>
+                              <br>
+                              <!-- ***Question 3*** -->
+                <h4>What is most important to you?</h4>
+                <div class="important">                   
+                        <input class="important-input" type="radio" name="importancy" id="importancy1" value="1" checked>
+                        <label class="important-label" for="importancy1">
+                         Happiness
+                        </label>
+                      </div>
+                      <div class="important">
+                        <input class="important-input" type="radio" name="importancy" id="importancy2" value="2">
+                        <label class="important-label" for="importancy2">
+                          Successful Career
+                        </label>
+                      </div>
+                      <div class="important">
+                        <input class="important-input" type="radio" name="importancy" id="importancy3" value="3" >
+                        <label class="important-label" for="importancy3">
+                          Family
+                        </label>
+                      </div>
+                      <div class="important">
+                            <input class="important-input" type="radio" name="importancy" id="importancy4" value="4" >
+                            <label class="important-label" for="importancy4">
+                              Church / Worship
+                            </label>
+                          </div>
+                          <div class="important">
+                                <input class="important-input" type="radio" name="importancy" id="importancy5" value="5">
+                                <label class="important-label" for="importancy5">
+                                 Food
+                                </label>
+                              </div>
+                    
+                    <br>
+                                   <!-- ***Question 4*** -->
+                <h4>Rate how much you like animals</h4>
+                <div class="animal-lover">                   
+                        <input class="animal-lover-input" type="radio" name="animal" id="animal1" value="1" checked>
+                        <label class="animal-lover-label" for="animal1">
+                         Love
+                        </label>
+                      </div>
+                      <div class="animal-lover">
+                        <input class="animal-lover-input" type="radio" name="animal" id="animal2" value="2">
+                        <label class="animal-lover-label" for="animal2">
+                          Like
+                        </label>
+                      </div>
+                      <div class="animal-lover">
+                        <input class="animal-lover-input" type="radio" name="animal" id="animal3" value="3" >
+                        <label class="animal-lover-label" for="animal3">
+                          Indifferent
+                        </label>
+                      </div>
+                      <div class="animal-lover">
+                            <input class="animal-lover-input" type="radio" name="animal" id="animal4" value="4" >
+                            <label class="animal-lover-label" for="animal4">
+                              Not Really
+                            </label>
+                          </div>
+                          <div class="animal-lover">
+                                <input class="animal-lover-input" type="radio" name="animal" id="animal5" value="5">
+                                <label class="animal-lover-label" for="animal5">
+                                 Achoo!!
+                                </label>
+                              </div>                    
+                    <br>
+                    <!-- ***Question 5*** -->
+                <h4>What genre of movies is your favorite?</h4>
+                <div class="movie">                   
+                        <input class="movie-input" type="radio" name="movie-choice" id="movie-choice1" value="1" checked>
+                        <label class="movie-label" for="1">
+                         Romance
+                        </label>
+                      </div>
+                      <div class="movie">
+                        <input class="movie-input" type="radio" name="movie-choice" id="2" value="2">
+                        <label class="movie-label" for="movie-choice2">
+                          Comedy
+                        </label>
+                      </div>
+                      <div class="movie">
+                        <input class="movie-input" type="radio" name="movie-choice" id="3" value="3" >
+                        <label class="movie-label" for="movie-choice3">
+                          Drama
+                        </label>
+                      </div>
+                      <div class="movie">
+                            <input class="movie-input" type="radio" name="movie-choice" id="movie-choice4" value="4" >
+                            <label class="movie-label" for="4">
+                              Sci-Fi
+                            </label>
+                          </div>
+                          <div class="movie">
+                                <input class="movie-input" type="radio" name="movie-choice" id="movie-choice5" value="5">
+                                <label class="movie-label" for="5">
+                                 Historical
+                                </label>
+                              </div>
+                    
+                    <br>
+                    <!-- ***Question 6*** -->
+                <h4>At work or school, you spend most of your time:</h4>
+                <div class="work-time">                   
+                        <input class="work-time-input" type="radio" name="work-time-choice" id="work-time-choice1" value="1" checked>
+                        <label class="work-time-label" for="work-time-choice1">
+                         Working hard, little interaction with others
+                        </label>
+                      </div>
+                      <div class="work-time">
+                        <input class="work-time-input" type="radio" name="work-time-choice" id="work-time-choice2" value="2">
+                        <label class="work-time-label" for="work-time-choice2">
+                           Helping others with their work
+                        </label>
+                      </div>
+                      <div class="work-time">
+                        <input class="work-time-input" type="radio" name="work-time-choice" id="work-time-choice3" value="3" >
+                        <label class="work-time-label" for="work-time-choice3">
+                          Cubicle/Desk hopping, and finding out the latest news
+                        </label>
+                      </div>
+                      <div class="work-time">
+                            <input class="work-time-input" type="radio" name="work-time-choice" id="work-time-choice4" value="4" >
+                            <label class="work-time-label" for="work-time-choice4">
+                                    Deep in conversation with your a friend
+                            </label>
+                          </div>
+                          <div class="work-time">
+                                <input class="work-time-input" type="radio" name="work-time-choice" id="work-time-choice5" value="5">
+                                <label class="work-time-label" for="work-time-choice5">
+                                 At the vending machine
+                                </label>
+                              </div>
+                              <br>
+                                  <!-- ***Question 7*** -->
+                <h4>What do you like to talk about?</h4>
+                <div class="topics">                   
+                        <input class="topics-input" type="radio" name="topics-choice" id="topics-choice1" value="1" checked>
+                        <label class="topics-label" for="topics-choice1">
+                         Plans for tomorrow
+                        </label>
+                      </div>
+                      <div class="topics">
+                        <input class="topics-input" type="radio" name="topics-choice" id="topics-choice2" value="2">
+                        <label class="topics-label" for="topics-choice2">
+                          Ideas
+                        </label>
+                      </div>
+                      <div class="topics">
+                        <input class="topics-input" type="radio" name="topics-choice" id="topics-choice3" value="3" >
+                        <label class="topics-label" for="topics-choice3">
+                          Gossip
+                        </label>
+                      </div>
+                      <div class="topics">
+                            <input class="topics-input" type="radio" name="topics-choice" id="topics-choice4" value="4" >
+                            <label class="topics-label" for="topics-choice4">
+                                    Entertainment
+                            </label>
+                          </div>
+                          <div class="topics">
+                                <input class="topics-input" type="radio" name="topics-choice" id="topics-choice5" value="5">
+                                <label class="topics-label" for="topics-choice5">
+                                 Food
+                                </label>
+                              </div>
+                    
+                    <br>
+                    <!-- ***Question 8*** -->
+                <h4>At a party, you're:</h4>
+                <div class="party">                   
+                        <input class="party-input" type="radio" name="party-choice" id="party-choice1" value="1" checked>
+                        <label class="party-label" for="party-choice1">
+                         The Life of the party
+                        </label>
+                      </div>
+                      <div class="party">
+                        <input class="party-input" type="radio" name="party-choice" id="party-choice2" value="2">
+                        <label class="party-label" for="party-choice2">
+                          The DJ
+                        </label>
+                      </div>
+                      <div class="party">
+                        <input class="party-input" type="radio" name="party-choice" id="party-choice3" value="3" >
+                        <label class="party-label" for="party-choice3">
+                          The WallFlower
+                        </label>
+                      </div>
+                      <div class="party">
+                            <input class="party-input" type="radio" name="party-choice" id="party-choice4" value="4" >
+                            <label class="party-label" for="party-choice4">
+                                    The Punch Spiker
+                            </label>
+                          </div>
+                          <div class="party">
+                                <input class="party-input" type="radio" name="party-choice" id="party-choice5" value="5">
+                                <label class="party-label" for="party-choice5">
+                                 Hanging out at the buffet table
+                                </label>
+                              </div>
+                    
+                    <br>
+                        <!-- ***Question 9*** -->
+                <h4>What are your favorite hues?</h4>
+                <div class="color">                   
+                        <input class="color-input" type="radio" name="color-choice" id="color-choice1" value="1" checked>
+                        <label class="color-label" for="color-choice1">
+                         Reds and Oranges
+                        </label>
+                      </div>
+                      <div class="color">
+                        <input class="color-input" type="radio" name="color-choice" id="color-choice2" value="2">
+                        <label class="color-label" for="color-choice2">
+                          Blues and Greens
+                        </label>
+                      </div>
+                      <div class="color">
+                        <input class="color-input" type="radio" name="color-choice" id="color-choice3" value="3" >
+                        <label class="color-label" for="color-choice3">
+                          Black and White
+                        </label>
+                      </div>
+                      <div class="color">
+                            <input class="color-input" type="radio" name="color-choice" id="color-choice4" value="4" >
+                            <label class="color-label" for="color-choice4">
+                                    Pastels
+                            </label>
+                          </div>
+                          <div class="color">
+                                <input class="color-input" type="radio" name="color-choice" id="color-choice5" value="5">
+                                <label class="color-label" for="color-choice5">
+                                 Rainbows
+                                </label>
+                              </div>
+                              <br>
+                              <!-- ***Question 10*** -->
+                      <h4>How neat are you?</h4>
+                      <div class="neatness">                   
+                              <input class="neatness-input" type="radio" name="neatness-choice" id="neatness-choice1" value="1" checked>
+                              <label class="neatness-label" for="neatness-choice1">
+                               Neat Freak
+                              </label>
+                            </div>
+                            <div class="neatness">
+                              <input class="neatness-input" type="radio" name="neatness-choice" id="neatness-choice2" value="2">
+                              <label class="neatness-label" for="neatness-choice2">
+                                I'm orderly, but not perfect
+                              </label>
+                            </div>
+                            <div class="neatness">
+                              <input class="neatness-input" type="radio" name="neatness-choice" id="neatness-choice3" value="3" >
+                              <label class="neatness-label" for="neatness-choice3">
+                                Depends on the day
+                              </label>
+                            </div>
+                            <div class="neatness">
+                                  <input class="neatness-input" type="radio" name="neatness-choice" id="neatness-choice4" value="4" >
+                                  <label class="neatness-label" for="neatness-choice4">
+                                         I get an 'E' for effort.
+                                  </label>
+                                </div>
+                                <div class="neatness">
+                                      <input class="neatness-input" type="radio" name="neatness-choice" id="neatness-choice5" value="5">
+                                      <label class="neatness-label" for="neatness-choice5">
+                                       I should be on the next TLC episode of 'Hoarders'
+                                      </label>
+                                    </div>
+                    
+                    <br>
+                    <hr>
+                <button type="submit" class="btn btn-default" id="submit" onclick="">Submit</button>
+              </form>
+        </div>
+        <footer class="footer">
+            <div class="container">
+              <p><a href="/">API Friends List</a> | <a href="https://github.com/afhaque/friendfinder">GitHub Repo</a></p>
+            </div>
+          </footer>
+    </div>
+</body>
+<script>
+    //Get Values from form
+    $("#submit").on("click", function(event){
+        event.preventDefault()
+        var data = [];
+        var dataObj = {};
+
+        var name = $("#name").val();
+        var photoURL = $("#photo").val();   
+    
+        var frequency = $("input[name='chatfrequency']:checked"). val();
+        var outdoor = $("input[name='outdoorsy']:checked"). val();
+
+        var important = $("input[name='importancy']:checked"). val();
+        var animal = $("input[name='animal']:checked"). val();
+        var movie =  $("input[name='movie-choice']:checked"). val();
+        var work =  $("input[name='work-time-choice']:checked"). val();
+        var topic = $("input[name='topics-choice']:checked"). val();
+        var party = $("input[name='party-choice']:checked"). val();
+        var color = $("input[name='color-choice']:checked"). val();
+        var neatness = $("input[name='neatness-choice']:checked"). val(); 
+        
+        data.push(name, photoURL, frequency,outdoor,important,animal,movie,work,topic,party,color,neatness);
+
+        // dataObj.append(data);    
+
+        console.log(data);
+        // console.log(dataObj);   
+    })
+</script>
+</html>
