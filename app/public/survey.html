@@ -379,31 +379,26 @@
 <script>
     //Get Values from form
     $("#submit").on("click", function(event){
-        event.preventDefault()
-        var data = [];
-        var dataObj = {};
-
-        var name = $("#name").val();
-        var photoURL = $("#photo").val();   
-    
-        var frequency = $("input[name='chatfrequency']:checked"). val();
-        var outdoor = $("input[name='outdoorsy']:checked"). val();
-
-        var important = $("input[name='importancy']:checked"). val();
-        var animal = $("input[name='animal']:checked"). val();
-        var movie =  $("input[name='movie-choice']:checked"). val();
-        var work =  $("input[name='work-time-choice']:checked"). val();
-        var topic = $("input[name='topics-choice']:checked"). val();
-        var party = $("input[name='party-choice']:checked"). val();
-        var color = $("input[name='color-choice']:checked"). val();
-        var neatness = $("input[name='neatness-choice']:checked"). val(); 
+        event.preventDefault();
         
-        data.push(name, photoURL, frequency,outdoor,important,animal,movie,work,topic,party,color,neatness);
+        var friendData = {
+         name: $("#name").val().trim(),
+         photo: $("#photo").val().trim(),
+         scores : [frequency = $("input[name='chatfrequency']:checked").val(),
+                  outdoor = $("input[name='outdoorsy']:checked"). val(),
+                  important = $("input[name='importancy']:checked"). val(),         animal = $("input[name='animal']:checked"). val(),
+                  movie =  $("input[name='movie-choice']:checked").val(),
+                  work =  $("input[name='work-time-choice']:checked").val(),
+                  topic = $("input[name='topics-choice']:checked").val(),
+                  party = $("input[name='party-choice']:checked").val(),
+                  color = $("input[name='color-choice']:checked").val(),
+                  neatness = $("input[name='neatness-choice']:checked"). val()
+                  ]
+                        };   
+                
+        console.log(friendData);        
+        location.reload;  
+    });	
 
-        // dataObj.append(data);    
-
-        console.log(data);
-        // console.log(dataObj);   
-    })
 </script>
 </html>
