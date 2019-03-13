@@ -371,7 +371,7 @@
         </div>
         <footer class="footer">
             <div class="container">
-              <p><a href="/">API Friends List</a> | <a href="https://github.com/afhaque/friendfinder">GitHub Repo</a></p>
+              <p><a href="/api/friends" target="_blank">API Friends List</a> | <a href="https://github.com/tsaraya29/finder" target="_blank">GitHub Repo</a></p>
             </div>
           </footer>
     </div>
@@ -384,21 +384,26 @@
         var friendData = {
          name: $("#name").val().trim(),
          photo: $("#photo").val().trim(),
-         scores : [frequency = $("input[name='chatfrequency']:checked").val(),
-                  outdoor = $("input[name='outdoorsy']:checked"). val(),
-                  important = $("input[name='importancy']:checked"). val(),         animal = $("input[name='animal']:checked"). val(),
-                  movie =  $("input[name='movie-choice']:checked").val(),
-                  work =  $("input[name='work-time-choice']:checked").val(),
-                  topic = $("input[name='topics-choice']:checked").val(),
-                  party = $("input[name='party-choice']:checked").val(),
-                  color = $("input[name='color-choice']:checked").val(),
-                  neatness = $("input[name='neatness-choice']:checked"). val()
+         scores : [$("input[name='chatfrequency']:checked").val(),
+                   $("input[name='outdoorsy']:checked"). val(),
+                   $("input[name='importancy']:checked"). val(),
+                   $("input[name='animal']:checked"). val(),
+                  $("input[name='movie-choice']:checked").val(),
+                  $("input[name='work-time-choice']:checked").val(),
+                  $("input[name='topics-choice']:checked").val(),
+                  $("input[name='party-choice']:checked").val(),
+                  $("input[name='color-choice']:checked").val(),
+                  $("input[name='neatness-choice']:checked"). val()
                   ]
                         };   
                 
-        console.log(friendData);        
-        location.reload;  
+        console.log(friendData); 
+             
+         $.post('/api/friends', friendData,          
+         function(friendData) {
+            $("#name").val("");
+            $("#photo").val("");
+           });           
     });	
-
 </script>
 </html>

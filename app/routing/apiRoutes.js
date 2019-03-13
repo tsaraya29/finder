@@ -1,3 +1,5 @@
+var friends = require('../data/friends.js');
+
 // REQUIRE PATH
 const PATH = require('path');
 
@@ -12,9 +14,10 @@ APP.get("/api/friends", function(req, res){
 
 // This will be used to handle incoming survey results. This route will also be used to handle the compatibility logic. When this route is 'hit' we console log the posted data then redirect to user back to the main route. 
 APP.post("/api/friends", function(req, res){
+	friends.push(req.body);
+	res.json(true);
 	console.log(req.body);
 
 	res.redirect("/");
 });
-
-}	
+};	
